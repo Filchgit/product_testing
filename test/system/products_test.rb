@@ -29,6 +29,8 @@ end
     login_as users(:sheila)
     visit "/products/calculate"
     assert_selector "h2", text: "This is where I want to check some calculations maybe?"
+    assert_selector "p", text: "Skello $1700"
+    
 end
 
 end
