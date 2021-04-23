@@ -10,7 +10,7 @@ puts 'Creating 5 products...'
   product = Product.create!(
     name: Faker::Company.name,
     tagline: Faker::Company.catch_phrase,
-    wholesale_cost: rand(1000..2000)
+    wholesale_cost: 1200
   )
   puts "#{i + 1}. #{product.name}"
 end

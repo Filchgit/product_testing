@@ -4,7 +4,7 @@
 <% @products.each do |item|  %>
  <p> 
  <%= item.name %>
- $<%= item.wholesale_cost %>
+ $<%= item.wholesale_cost/100 %>
 
  </p> 
 <% end %>

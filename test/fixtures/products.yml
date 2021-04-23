@@ -11,5 +11,5 @@ roadstr:
 product_<%= i %>:
   name: <%= Faker::Company.name %>
   tagline: <%= Faker::Company.catch_phrase %>
-  wholesale_cost: rand(1000..2000)
+  wholesale_cost: <%= rand(1000..2000) %>
 <% end %>
