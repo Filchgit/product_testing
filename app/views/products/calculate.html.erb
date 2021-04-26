@@ -1,0 +1,11 @@
+<br>
+<h2>This is where I want to check some calculations maybe?</h2>
+
+<% @products.each do |item|  %>
+ <p> 
+ <%= item.name %>
+ $<%= item.wholesale_cost/100 %>
+
+ </p> 
+<% end %>
+

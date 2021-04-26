@@ -25,4 +25,12 @@ class ProductsTest < ApplicationSystemTestCase
   assert_text "Change your life: Learn to code"
 end
 
+  test " visiting the calculate page" do
+    login_as users(:sheila)
+    visit "/products/calculate"
+    assert_selector "h2", text: "This is where I want to check some calculations maybe?"
+    assert_selector "p", text: "Skello $17"
+    assert_equal(17, (Product.find_by name: "Skello").wholesale_cost/100)
+end
+
 end

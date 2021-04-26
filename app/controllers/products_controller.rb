@@ -9,6 +9,10 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def calculate
+    @products = Product.all
+  end
+
   def create
     @product = Product.new(product_params)
 
