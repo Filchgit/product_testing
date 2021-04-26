@@ -10,6 +10,7 @@ class ProductsTest < ApplicationSystemTestCase
 
   test "lets a signed in user create a new product" do
   login_as users(:sheila)
+
   visit "/products/new"
   #save_and_open_screenshot
 
